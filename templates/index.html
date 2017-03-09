@@ -60,7 +60,7 @@
 	    var dataLayer = L.geoJson(data, {
 	    	onEachFeature: function(feature, layer){
 	    		layer.bindPopup(
-	    			'<a href="' + feature.properties.id + '/">' + feature.properties.full_name + 
+	    			'<a href="' + feature.properties.id + '/" target="_blank">' + feature.properties.full_name + 
 	    			'</a>'
 
 	    			);
