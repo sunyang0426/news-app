@@ -2,11 +2,24 @@
 <html lang="en">
 <head>
 	<title>LA riot interactive map</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 </head>
 
 <body>
+	<nav>
+		<img src="{{url_for('static', filename='logo.png')}}">
+	</nav>
+
+	<header>
+		<h1>There are the 60 people who died during the L.A. riots.</h1>
+		<div class="byline">
+			By <a href="www.yangsunjournalism.com">Yang Sun</a> of <a href="http://www.columbiamissourian.com/">Columbia Missouri</a>
+		</div>
+	</header>
+
+
 	<div id="map" style="width:100%; height:300px;"></div>
 	<h1>Deaths during the L.A. riots</h1>
 	<table border=1 cellpadding=7>
